@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html> 
+		<head> 
+			<meta charset="UTF-8"/> 
+			<title>title</title> 
+            <link rel="stylesheet"type="text/css"href="style.css">
+            <script defer src="jqery.js"></script>
+            <script defer src="rainbowvis.js"></script>
+            <script defer src="script.js"></script>
+		</head>       
+        
+		<body>
+            <div id="score"></div>
+            <div id="setingDiv">
+                <p id="test" ></p>
+                Choos color type <Br></Br>
+                <input type="radio" name="answer" value="Solid" checked> Solid color <t></t>
+                <input type="radio" name="answer" value="Gradient"> Gradient color <t></t>
+                <input type="radio" name="answer" value="Rainbow"> Rainbow <t></t>
+                <input type="radio" name="answer" value="Random"> Random color <Br></Br>
+                <div id="color1">
+                    Color 1  <input id="inputColor1" onclick="enterColor1()" onchange="enterColor1()" type="text" name="color1" value="00ff00">
+                </div> 
+                <div id="color2">
+                    Color 2  <input id="inputColor2" onclick="enterColor2()" onchange="enterColor2()" type="text" name="acolor2" value="000000">
+                </div>
+                <div id="interval">
+                    Interval <input id="inputInterval"  type="text" name="interval" value="50"> 
+                </div>
+
+                <div>
+                    <input type="button" name="Summit" value="Submit" onclick="submitSetings()">
+                    <p  id="continue">
+                        or
+                        <input type="button" name="Continue" value="Continue last game" onclick="continueGame()">
+                    </p>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+                <div id="gameOver"> 
+                    YOU LOOSE
+                </div>
+        </body>  
+	</html>

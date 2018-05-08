@@ -1,0 +1,39 @@
+*{
+    overflow:hidden;
+    font-size: 20;
+}
+p{
+    border-radius: 25px;
+}
+body{
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-size: 10px 10px;
+  background-position: left left;
+}
+input[value="Solid"]:checked ~  #color2{
+    display: none;
+}
+input[value="Solid"]:checked ~  #interval{
+    display: none;    
+}
+input[value="Rainbow"]:checked ~  #color1{
+    display: none;
+}
+input[value="Rainbow"]:checked ~  #color2{
+    display: none;
+}
+input[value="Random"]:checked ~  #color1{
+    display: none;
+}
+input[value="Random"]:checked ~  #color2{
+    display: none;
+}
+input[value="Random"]:checked ~  #interval{
+    display: none;
+}
+#gameOver{
+    font-size: 36;
+    text-align: center;
+/*    display: none;*/
+    visibility: hidden;
+}
